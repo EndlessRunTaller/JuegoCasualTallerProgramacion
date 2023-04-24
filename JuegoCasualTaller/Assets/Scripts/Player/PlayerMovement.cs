@@ -4,22 +4,58 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    private float speedRotation = 10f;
+    [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private GameInput gameInput;
-    
+
     private void Update()
     {
         Movimiento();
     }
 
-
-    //Inputs del personaje
     public void Movimiento()
     {
-        Vector3 inputVector = gameInput.GetMovementVectorNormalized();
-        float rotateSpeed = 10f;
-        
-        transform.position += inputVector * Time.deltaTime* moveSpeed;
-        transform.forward = Vector3.Slerp(transform.forward,inputVector,Time.deltaTime*rotateSpeed);
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+
+        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
+
+        float moveDistance = moveSpeed * Time.deltaTime;
+        float playerRadius = 0.7f;
+        float playerHeight = 2f;
+
+        bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance);
+
+        if (!canMove)
+        {
+            Vector3 moveDirX = new Vector3(moveDir.x, 0, 0).normalized;
+            canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirX, moveDistance);
+
+            if (canMove)
+            {
+                moveDir = moveDirX;
+            }
+            else
+            {
+                Vector3 moveDirZ = new Vector3(0, 0, moveDir.z).normalized;
+                canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirZ, moveDistance);
+
+                if (canMove)
+                {
+                    moveDir = moveDirZ;
+                }
+                else
+                {
+
+                }
+            }
+        }
+
+        if (canMove)
+        {
+            transform.position += moveDir * moveDistance;
+        }
+
+        transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * speedRotation);
     }
+
 }
