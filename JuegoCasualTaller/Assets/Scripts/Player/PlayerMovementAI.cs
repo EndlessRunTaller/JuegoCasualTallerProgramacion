@@ -5,7 +5,11 @@ using UnityEngine.AI;
 
 public class PlayerMovementAI : MonoBehaviour
 {
-    private NavMeshAgent jugador1; //Navi
+    public MovimientoNPC movimientoNPC;
+
+    private int numeroGenerado;
+
+    public NavMeshAgent jugador1; //Navi
     [Header("Navi")]
     public Transform[] Componentes; //Posicion de los componentes, 0 = Gabinete, 1 = CPU, 2 = RAM, 3 MesaArmado, 4 Venta 
     public float timer; //Temporizador
@@ -13,7 +17,7 @@ public class PlayerMovementAI : MonoBehaviour
 
     //Raycast
     [Header("Raycast")]
-    [SerializeField] private Transform objetoRaycast;
+    [SerializeField] public Transform objetoRaycast;
     public float rayoDistancia;
 
     [Header("Personaje Visual")]
@@ -24,77 +28,52 @@ public class PlayerMovementAI : MonoBehaviour
     public bool enRAM;
     public bool enMesaDeTrabajo;
     public bool enMesaVenta;
+    public bool ventaLista;
+
+    public Ruta Ruta1;
+    public Ruta Ruta2;
+    public Ruta Ruta3;
+
+    public bool procesoIniciado = false;
 
     void Start()
     {
         jugador1 = GetComponent<NavMeshAgent>();
+        numeroGenerado = Comportamiento();
     }
 
     void Update()
     {
-
-        if (timer < 10)
+        if (movimientoNPC.MesaNPC() == true && procesoIniciado == false)
         {
-            MovimientoGabinete();
-            //Rota el raycast
-            RotarHaciaObjetivo(objetoRaycast, Componentes[0]);
-            //Rota la visual del jugador
-            RotarEnDireccionEjeYVisual(jugadorVisual, Componentes[0]);
-
-        }
-        else if (timer > 10 && timer < 20)
-        {
-            MovimientoCPU();
-            RotarHaciaObjetivo(objetoRaycast, Componentes[1]);
-            RotarEnDireccionEjeYVisual(jugadorVisual, Componentes[1]);
+            Ruta1.Iniciar();
+            procesoIniciado = true;
+            Contador();
         }
 
-        else if(timer > 20 && timer < 30)
-        {
-            MovimientoRAM();
-            RotarHaciaObjetivo(objetoRaycast, Componentes[2]);
-            RotarEnDireccionEjeYVisual(jugadorVisual, Componentes[2]);
-        }
-
-        else if(timer > 30 && timer < 40)
-        {
-            MovimientoMesaTrabajo();
-            RotarHaciaObjetivo(objetoRaycast, Componentes[3]);
-            RotarEnDireccionEjeYVisual(jugadorVisual, Componentes[3]);
-        }
-        else if(timer > 40 && timer < 45)
-        {
-            MovimientoMesaVenta();
-            RotarHaciaObjetivo(objetoRaycast, Componentes[4]);
-            RotarEnDireccionEjeYVisual(jugadorVisual, Componentes[4]);
-        }
-        else if(timer >= 45)
-        {
-            timer = 0;
-        }
-
-        Contador();
+        
+        
 
     }
 
-    void MovimientoGabinete()
+    public void MovimientoGabinete()
     {
         jugador1.SetDestination(Componentes[0].transform.position);
     }
-    void MovimientoCPU()
+    public void MovimientoCPU()
     {
         jugador1.SetDestination(Componentes[1].transform.position);
     }
 
-    void MovimientoRAM()
+    public void MovimientoRAM()
     {
         jugador1.SetDestination(Componentes[2].transform.position);
     }
-    void MovimientoMesaTrabajo()
+    public void MovimientoMesaTrabajo()
     {
         jugador1.SetDestination(Componentes[3].transform.position);
     }
-    void MovimientoMesaVenta()
+    public void MovimientoMesaVenta()
     {
         jugador1.SetDestination(Componentes[4].transform.position);
     }
@@ -185,4 +164,16 @@ public class PlayerMovementAI : MonoBehaviour
         float rotacionY = rotacionObjetivo.eulerAngles.y;
         objetoRotar.transform.rotation = Quaternion.Euler(0, rotacionY, 0);
     }
+
+    public int Comportamiento()
+    {
+        int[] numerosPosibles = new int[] { 1, 2,3};
+        int indiceAleatorio = Random.Range( 0, numerosPosibles.Length);
+        return numerosPosibles[indiceAleatorio];
+
+    }
 }
+
+
+
+
