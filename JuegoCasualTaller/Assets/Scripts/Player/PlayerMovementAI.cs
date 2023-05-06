@@ -32,9 +32,8 @@ public class PlayerMovementAI : MonoBehaviour
     public bool ventaLista;
 
     [Header("RUTAS")]
-    public Ruta Ruta1;
-    public Ruta Ruta2;
-    public Ruta Ruta3;
+    public Ruta[] Ruta;
+
 
     public float tiempoReal;
 
@@ -43,14 +42,14 @@ public class PlayerMovementAI : MonoBehaviour
     void Start()
     {
         jugador1 = GetComponent<NavMeshAgent>();
-        numeroGenerado = Comportamiento();
+        Time.timeScale = 10f;
     }
 
     void Update()
     {
         if (movimientoNPC.MesaNPC() == true && procesoIniciado == false)
         {
-            Ruta1.Iniciar();
+            Ruta[Comportamiento()].Iniciar();
             procesoIniciado = true;
             Contador();
         }
@@ -119,7 +118,7 @@ public class PlayerMovementAI : MonoBehaviour
 
     public int Comportamiento()
     {
-        int[] numerosPosibles = new int[] { 1, 2,3};
+        int[] numerosPosibles = new int[] { 0, 1,2,3,4,5};
         int indiceAleatorio = Random.Range( 0, numerosPosibles.Length);
         return numerosPosibles[indiceAleatorio];
 
