@@ -7,8 +7,6 @@ public class PlayerMovementAI : MonoBehaviour
 {
     public MovimientoNPC movimientoNPC;
 
-    private int numeroGenerado;
-
     public NavMeshAgent jugador1; //Navi
     [Header("NAVI")]
     public Transform[] Componentes; //Posicion de los componentes, 0 = Gabinete, 1 = CPU, 2 = RAM, 3 MesaArmado, 4 Venta 
@@ -38,11 +36,11 @@ public class PlayerMovementAI : MonoBehaviour
     public float tiempoReal;
 
     public bool procesoIniciado = false;
+    public Transform rotacion;
 
     void Start()
     {
         jugador1 = GetComponent<NavMeshAgent>();
-        Time.timeScale = 10f;
     }
 
     void Update()
@@ -53,32 +51,6 @@ public class PlayerMovementAI : MonoBehaviour
             procesoIniciado = true;
             Contador();
         }
-
-        
-        
-
-    }
-
-    public void MovimientoGabinete()
-    {
-        jugador1.SetDestination(Componentes[0].transform.position);
-    }
-    public void MovimientoCPU()
-    {
-        jugador1.SetDestination(Componentes[1].transform.position);
-    }
-
-    public void MovimientoRAM()
-    {
-        jugador1.SetDestination(Componentes[2].transform.position);
-    }
-    public void MovimientoMesaTrabajo()
-    {
-        jugador1.SetDestination(Componentes[3].transform.position);
-    }
-    public void MovimientoMesaVenta()
-    {
-        jugador1.SetDestination(Componentes[4].transform.position);
     }
     void Contador()
     {
