@@ -10,19 +10,20 @@ public class PlayerMovementAI : MonoBehaviour
     private int numeroGenerado;
 
     public NavMeshAgent jugador1; //Navi
-    [Header("Navi")]
+    [Header("NAVI")]
     public Transform[] Componentes; //Posicion de los componentes, 0 = Gabinete, 1 = CPU, 2 = RAM, 3 MesaArmado, 4 Venta 
     public float timer; //Temporizador
     public float tiempoArmado = 0f; // Tiempo para armar
 
     //Raycast
-    [Header("Raycast")]
+    [Header("RAYCAST")]
     [SerializeField] public Transform objetoRaycast;
     public float rayoDistancia;
 
     [Header("Personaje Visual")]
     public Transform jugadorVisual;
 
+    [Header("BOLEANOS")]
     public bool enGabinete;
     public bool enCPU;
     public bool enRAM;
@@ -30,9 +31,12 @@ public class PlayerMovementAI : MonoBehaviour
     public bool enMesaVenta;
     public bool ventaLista;
 
+    [Header("RUTAS")]
     public Ruta Ruta1;
     public Ruta Ruta2;
     public Ruta Ruta3;
+
+    public float tiempoReal;
 
     public bool procesoIniciado = false;
 
@@ -90,65 +94,13 @@ public class PlayerMovementAI : MonoBehaviour
         }
         if (hit.transform == null)
         {
-            Debug.Log("Nada");
-            enGabinete = false;
-            enCPU = false;
-            enRAM = false;
-            enMesaDeTrabajo = false;
-            enMesaVenta = false;
+            timer = 0;
         }
-        else if (hit.transform.name == "Gabinete (0)")
-        {
-
-            timer = timer + 1 * Time.deltaTime;
-            Debug.Log(timer);
-            enGabinete = true;
-            enCPU = false;
-            enRAM = false;
-            enMesaDeTrabajo = false;
-            enMesaVenta = false;
-
-        }
-        else if(hit.transform.name == "CPU (0)")
+        else
         {
             timer = timer + 1 * Time.deltaTime;
-            Debug.Log(timer);
-            enGabinete = false;
-            enCPU = true;
-            enRAM = false;
-            enMesaDeTrabajo = false;
-            enMesaVenta = false;
         }
-        else if(hit.transform.name == "RAM (0)")
-        {
-            timer = timer + 1 * Time.deltaTime;
-            Debug.Log(timer);
-            enGabinete = false;
-            enCPU = false;
-            enRAM = true;
-            enMesaDeTrabajo = false;
-            enMesaVenta = false;
-        }
-        else if(hit.transform.name == "MesaTrabajo")
-        {
-            timer = timer + 1 * Time.deltaTime;
-            Debug.Log(timer);
-            enGabinete = false;
-            enCPU = false;
-            enRAM = false;
-            enMesaDeTrabajo = true;
-            enMesaVenta = false;
-        }
-        else if (hit.transform.name == "MesaVenta")
-        {
-            timer = timer + 1 * Time.deltaTime;
-            Debug.Log(timer);
-            enGabinete = false;
-            enCPU = false;
-            enRAM = false;
-            enMesaDeTrabajo = false;
-            enMesaVenta = true;
-        }
+        
     }
 
     public void RotarHaciaObjetivo(Transform objetoRotar, Transform objetivo)

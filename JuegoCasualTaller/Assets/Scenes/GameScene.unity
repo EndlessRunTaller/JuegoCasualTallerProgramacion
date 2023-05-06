@@ -3941,7 +3941,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 10
+  TiempoDeEjecucion: 5
 --- !u!1001 &1548593775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4082,7 +4082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 1124778634}
+  Componente: {fileID: 1560940750}
   TiempoDeEjecucion: 10
 --- !u!4 &1560575658 stripped
 Transform:
@@ -4114,7 +4114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560940749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4403,6 +4403,7 @@ MonoBehaviour:
   Ruta1: {fileID: 2054235393}
   Ruta2: {fileID: 0}
   Ruta3: {fileID: 0}
+  tiempoReal: 0
   procesoIniciado: 0
 --- !u!4 &1579900140
 Transform:

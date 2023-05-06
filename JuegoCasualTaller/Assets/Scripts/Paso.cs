@@ -11,11 +11,11 @@ public class Paso : MonoBehaviour
     public IEnumerator Ejecutar()
     {
         playerMovement.jugador1.SetDestination(Componente.position);
-        //Rota el raycast
         playerMovement.RotarHaciaObjetivo(playerMovement.objetoRaycast, Componente);
-        //Rota la visual del jugador
         playerMovement.RotarEnDireccionEjeYVisual(playerMovement.jugadorVisual, Componente);
-        yield return new WaitForSeconds(TiempoDeEjecucion);
+        playerMovement.tiempoReal = TiempoDeEjecucion - playerMovement.timer;
+        Debug.Log(playerMovement.tiempoReal);
+        yield return new WaitForSeconds(playerMovement.tiempoReal);
         completado = true;
     }
 
