@@ -170,7 +170,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!1 &23404498
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,8 +249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 33841925}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!4 &33841925
 Transform:
   m_ObjectHideFlags: 0
@@ -313,7 +313,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &52280307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: 0004cb1e11ad014419b943c7da960724,
@@ -509,7 +509,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1001 &92852878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1560940750}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!1 &224828007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,8 +1086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 227416166}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!1 &250883923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &250883925
 Transform:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.485991, y: 0.0000000091558245, z: -0.000000005091342, w: 0.87396383}
+  m_LocalRotation: {x: 0.48599097, y: -0.00000006951722, z: 0.00000003865691, w: 0.87396383}
   m_LocalPosition: {x: 0, y: 32.2, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1562,7 +1562,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &356729967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &372011960
 Transform:
   m_ObjectHideFlags: 0
@@ -1710,8 +1710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 385946073}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2044,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &533157274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,7 +2649,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1001 &657744923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2781,7 +2781,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &707886926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,7 +2829,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &709114284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: 0004cb1e11ad014419b943c7da960724,
@@ -3013,7 +3013,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &811371136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1829845570}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!1 &815770530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,7 +3109,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &822905136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &822905138
 Transform:
   m_ObjectHideFlags: 0
@@ -3275,7 +3275,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833955996}
-  m_LocalRotation: {x: 0.485991, y: 0.0000000091558245, z: -0.000000005091342, w: 0.87396383}
+  m_LocalRotation: {x: 0.48599097, y: -0.00000006951722, z: 0.00000003865691, w: 0.87396383}
   m_LocalPosition: {x: 0, y: 32.2, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3386,7 +3386,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &865755112
 Transform:
   m_ObjectHideFlags: 0
@@ -3498,7 +3498,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &913032022
 Transform:
   m_ObjectHideFlags: 0
@@ -3708,7 +3708,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &1013584767
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,8 +4194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 1102685328}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!1 &1104216097
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,7 +4243,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &1124778633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,7 +4546,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1829845570}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!4 &1207779928
 Transform:
   m_ObjectHideFlags: 0
@@ -4609,7 +4609,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &1210202436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: 0004cb1e11ad014419b943c7da960724,
@@ -4648,7 +4648,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &1235631697
 Transform:
   m_ObjectHideFlags: 0
@@ -5174,8 +5174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 1425009818}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!1 &1448800242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5251,7 +5251,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &1474980120
 Transform:
   m_ObjectHideFlags: 0
@@ -5314,7 +5314,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &1496934895
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,8 +5393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
-  Componente: {fileID: 1529022571}
-  TiempoDeEjecucion: 0
+  Componente: {fileID: 180766167}
+  tiempoDeEspera: 0
 --- !u!1 &1533320724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5442,7 +5442,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!1 &1545775780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,7 +5490,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!1001 &1548593775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5632,7 +5632,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1560940750}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!1 &1557564546
 GameObject:
   m_ObjectHideFlags: 0
@@ -5680,7 +5680,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!4 &1560575658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: 0004cb1e11ad014419b943c7da960724,
@@ -5995,7 +5995,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 295732504}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1 &1579900138
 GameObject:
   m_ObjectHideFlags: 0
@@ -6126,7 +6126,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1124778634}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 3
 --- !u!4 &1592668073
 Transform:
   m_ObjectHideFlags: 0
@@ -6460,7 +6460,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 946252005}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!1 &1810906694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,7 +6508,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1448800243}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!1001 &1825019497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7135,7 +7135,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 1560940750}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 10
 --- !u!4 &2001880632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: 0004cb1e11ad014419b943c7da960724,
@@ -7434,7 +7434,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 2041156245}
-  TiempoDeEjecucion: 10
+  tiempoDeEspera: 3
 --- !u!4 &2026594285
 Transform:
   m_ObjectHideFlags: 0
@@ -7607,7 +7607,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!4 &2049470033
 Transform:
   m_ObjectHideFlags: 0
@@ -7730,7 +7730,7 @@ MonoBehaviour:
   completado: 0
   playerMovement: {fileID: 1579900139}
   Componente: {fileID: 180766167}
-  TiempoDeEjecucion: 5
+  tiempoDeEspera: 1
 --- !u!1 &2098359310
 GameObject:
   m_ObjectHideFlags: 0

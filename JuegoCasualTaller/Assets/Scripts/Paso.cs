@@ -1,28 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Paso : MonoBehaviour
 {
     public bool completado;
     public PlayerMovementAI playerMovement;
     public Transform Componente;
-    public float TiempoDeEjecucion;
+    public int tiempoDeEspera;
 
     public IEnumerator Ejecutar()
     {
-        playerMovement.jugador1.SetDestination(Componente.position);
+        NavMeshAgent agente = playerMovement.jugador1;
+        agente.SetDestination(Componente.position);
         playerMovement.rotacion.position = Componente.position;
-        playerMovement.tiempoReal = TiempoDeEjecucion - playerMovement.timer;
 
-        yield return new WaitForSeconds(playerMovement.tiempoReal);
+        while (agente.pathPending || agente.remainingDistance > agente.stoppingDistance)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(tiempoDeEspera);
 
         completado = true;
     }
 
     public void Update()
     {
-
         playerMovement.RotarHaciaObjetivo(playerMovement.objetoRaycast, playerMovement.rotacion);
         playerMovement.RotarEnDireccionEjeYVisual(playerMovement.jugadorVisual, playerMovement.rotacion);
     }

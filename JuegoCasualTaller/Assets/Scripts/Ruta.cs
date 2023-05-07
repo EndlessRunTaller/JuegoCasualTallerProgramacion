@@ -8,19 +8,18 @@ public class Ruta : MonoBehaviour
     public List<Paso> PasosEnRuta;
     public PlayerMovementAI playerMovement;
 
-
     public void Iniciar()
     {
         Reset();
         StartCoroutine(Ejecutar());
     }
+
     public IEnumerator Ejecutar()
     {
         foreach (Paso p in PasosEnRuta)
         {
             StartCoroutine(p.Ejecutar());
             yield return new WaitWhile(() => p.completado == false);
-            //hay minijuego?
         }
 
         StartCoroutine(PasoFinal.Ejecutar());
