@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Paso : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class Paso : MonoBehaviour
     public Transform Componente;
     public int tiempoDeEspera;
 
+    bool llego = false;
+
     public GameObject barraTiempo;
+    public Image barraImagen;
 
     public IEnumerator Ejecutar()
     {
@@ -22,9 +26,13 @@ public class Paso : MonoBehaviour
         {
             yield return null;
         }
-        barraTiempo.SetActive(true);
+        llego = true;
+        barraTiempo.SetActive(llego);
+        
         yield return new WaitForSeconds(tiempoDeEspera);
         barraTiempo.SetActive(false);
+        llego = false;
+        barraTiempo.SetActive(llego);
 
         completado = true;
     }

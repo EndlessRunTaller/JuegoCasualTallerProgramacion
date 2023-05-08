@@ -7,6 +7,7 @@ public class Ruta : MonoBehaviour
     public Paso PasoFinal;
     public List<Paso> PasosEnRuta;
     public PlayerMovementAI playerMovement;
+    public Componente componente;
 
     public void Iniciar()
     {
@@ -16,14 +17,19 @@ public class Ruta : MonoBehaviour
 
     public IEnumerator Ejecutar()
     {
+        UnityEngine.AI.NavMeshAgent agente = playerMovement.jugador1;
         foreach (Paso p in PasosEnRuta)
         {
             StartCoroutine(p.Ejecutar());
             yield return new WaitWhile(() => p.completado == false);
         }
-
         StartCoroutine(PasoFinal.Ejecutar());
-        Debug.Log("LLego final");
+
+        while (agente.pathPending || agente.remainingDistance > agente.stoppingDistance)
+        {
+            yield return null;
+        }
+        componente.dinero = componente.dinero + 25;
         yield return new WaitWhile(() => PasoFinal.completado == false);
 
         yield return new WaitForSeconds(0f);

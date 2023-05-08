@@ -41,6 +41,7 @@ public class PlayerMovementAI : MonoBehaviour
     void Start()
     {
         jugador1 = GetComponent<NavMeshAgent>();
+        Time.timeScale = 10f;
     }
 
     void Update()
@@ -49,29 +50,7 @@ public class PlayerMovementAI : MonoBehaviour
         {
             Ruta[Comportamiento()].Iniciar();
             procesoIniciado = true;
-            Contador();
         }
-    }
-    void Contador()
-    {
-        Debug.DrawRay(objetoRaycast.position, objetoRaycast.forward * rayoDistancia, Color.red);
-        RaycastHit hit;
-        
-
-        //Raycast
-        if (Physics.Raycast(objetoRaycast.position, objetoRaycast.forward, out hit, rayoDistancia))
-        {
-            
-        }
-        if (hit.transform == null)
-        {
-            timer = 0;
-        }
-        else
-        {
-            timer = timer + 1 * Time.deltaTime;
-        }
-        
     }
 
     public void RotarHaciaObjetivo(Transform objetoRotar, Transform objetivo)

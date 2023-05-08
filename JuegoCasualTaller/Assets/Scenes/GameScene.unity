@@ -168,6 +168,7 @@ MonoBehaviour:
   - {fileID: 1813613132}
   - {fileID: 2000572907}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &22059018
 Transform:
   m_ObjectHideFlags: 0
@@ -285,6 +286,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!1 &62800387
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +321,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!4 &62800389
 Transform:
   m_ObjectHideFlags: 0
@@ -517,6 +520,7 @@ MonoBehaviour:
   - {fileID: 267976834}
   - {fileID: 1444046411}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &100568123
 Transform:
   m_ObjectHideFlags: 0
@@ -1786,6 +1790,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!4 &267976835
 Transform:
   m_ObjectHideFlags: 0
@@ -1964,6 +1969,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!4 &322415656
 Transform:
   m_ObjectHideFlags: 0
@@ -2368,6 +2374,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!4 &350411032
 Transform:
   m_ObjectHideFlags: 0
@@ -3063,6 +3070,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &419813920
 Transform:
   m_ObjectHideFlags: 0
@@ -3436,6 +3444,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!4 &549592229
 Transform:
   m_ObjectHideFlags: 0
@@ -3488,6 +3497,7 @@ MonoBehaviour:
   - {fileID: 801046149}
   - {fileID: 322415655}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &553509875
 Transform:
   m_ObjectHideFlags: 0
@@ -3738,6 +3748,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!4 &566657046
 Transform:
   m_ObjectHideFlags: 0
@@ -3787,6 +3798,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &584426710
 Transform:
   m_ObjectHideFlags: 0
@@ -4164,6 +4176,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!1 &702013164
 GameObject:
   m_ObjectHideFlags: 0
@@ -4752,6 +4765,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!4 &801046150
 Transform:
   m_ObjectHideFlags: 0
@@ -5113,6 +5127,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &865755112
 Transform:
   m_ObjectHideFlags: 0
@@ -5326,6 +5341,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!4 &934641985
 Transform:
   m_ObjectHideFlags: 0
@@ -5474,14 +5490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovementAI: {fileID: 1579900139}
-  Barras:
-  - {fileID: 641640119}
-  - {fileID: 224828007}
-  - {fileID: 1183917613}
-  barrasImagenes:
-  - {fileID: 641640121}
-  - {fileID: 224828009}
-  - {fileID: 1183917615}
   miniJuegosPanel:
   - {fileID: 467058579}
   miniJuegosImagenBarra:
@@ -5673,6 +5681,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!4 &1092044392
 Transform:
   m_ObjectHideFlags: 0
@@ -5998,6 +6007,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &1195742497
 Transform:
   m_ObjectHideFlags: 0
@@ -6156,6 +6166,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!1001 &1242263962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6724,6 +6735,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!4 &1382594278
 Transform:
   m_ObjectHideFlags: 0
@@ -6871,6 +6883,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!4 &1444046412
 Transform:
   m_ObjectHideFlags: 0
@@ -6969,6 +6982,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!4 &1485183904
 Transform:
   m_ObjectHideFlags: 0
@@ -7144,6 +7158,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!1 &1556103961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,6 +7208,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!1 &1560940749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,6 +7965,7 @@ MonoBehaviour:
   - {fileID: 2137282185}
   - {fileID: 1759440489}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &1595239735
 Transform:
   m_ObjectHideFlags: 0
@@ -8016,6 +8033,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!4 &1625973372
 Transform:
   m_ObjectHideFlags: 0
@@ -8187,6 +8205,7 @@ MonoBehaviour:
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 224828007}
+  barraImagen: {fileID: 224828009}
 --- !u!4 &1645919453
 Transform:
   m_ObjectHideFlags: 0
@@ -8549,6 +8568,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!4 &1737484540
 Transform:
   m_ObjectHideFlags: 0
@@ -8598,6 +8618,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!4 &1739460725
 Transform:
   m_ObjectHideFlags: 0
@@ -8647,6 +8668,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!4 &1759440490
 Transform:
   m_ObjectHideFlags: 0
@@ -8794,6 +8816,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!4 &1813613133
 Transform:
   m_ObjectHideFlags: 0
@@ -10000,6 +10023,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &1842094327
 Transform:
   m_ObjectHideFlags: 0
@@ -10162,6 +10186,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!4 &1868008715
 Transform:
   m_ObjectHideFlags: 0
@@ -10211,6 +10236,7 @@ MonoBehaviour:
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 641640119}
+  barraImagen: {fileID: 641640121}
 --- !u!4 &1877971235
 Transform:
   m_ObjectHideFlags: 0
@@ -10260,6 +10286,7 @@ MonoBehaviour:
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1662435060}
+  barraImagen: {fileID: 1662435062}
 --- !u!4 &1888449090
 Transform:
   m_ObjectHideFlags: 0
@@ -10415,6 +10442,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!4 &1917880587
 Transform:
   m_ObjectHideFlags: 0
@@ -10570,6 +10598,7 @@ MonoBehaviour:
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
   barraTiempo: {fileID: 515239911}
+  barraImagen: {fileID: 515239912}
 --- !u!4 &2000572908
 Transform:
   m_ObjectHideFlags: 0
@@ -11109,6 +11138,7 @@ MonoBehaviour:
   - {fileID: 1207976056}
   - {fileID: 1556103963}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &2054235394
 Transform:
   m_ObjectHideFlags: 0
@@ -11164,6 +11194,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!4 &2055497433
 Transform:
   m_ObjectHideFlags: 0
@@ -11216,6 +11247,7 @@ MonoBehaviour:
   - {fileID: 1382594277}
   - {fileID: 566657045}
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
 --- !u!4 &2067373054
 Transform:
   m_ObjectHideFlags: 0
@@ -11424,6 +11456,7 @@ MonoBehaviour:
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
   barraTiempo: {fileID: 368636884}
+  barraImagen: {fileID: 368636885}
 --- !u!4 &2136501667
 Transform:
   m_ObjectHideFlags: 0
@@ -11473,6 +11506,7 @@ MonoBehaviour:
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
   barraTiempo: {fileID: 1183917613}
+  barraImagen: {fileID: 1183917615}
 --- !u!4 &2137282186
 Transform:
   m_ObjectHideFlags: 0
