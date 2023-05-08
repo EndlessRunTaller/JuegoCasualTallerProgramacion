@@ -8,8 +8,10 @@ public class Paso : MonoBehaviour
 {
     public bool completado;
     public PlayerMovementAI playerMovement;
+    public Componente componente;
     public Transform Componente;
     public int tiempoDeEspera;
+    public string nombre;
 
     bool llego = false;
 
@@ -28,6 +30,16 @@ public class Paso : MonoBehaviour
             yield return null;
         }
         llego = true;
+        if (nombre == "Trabajo")
+        {
+            componente.cajas[0].SetActive(true);
+            componente.cajas[1].SetActive(true);
+            componente.cajas[2].SetActive(true);
+        }
+        if(nombre == "Dinero")
+        {
+            componente.gabinetes[0].SetActive(true);
+        }
         while (timer < tiempoDeEspera && llego)
         {
             timer = timer + 1 * Time.deltaTime;
@@ -35,6 +47,13 @@ public class Paso : MonoBehaviour
             barraImagen.fillAmount = timer / tiempoDeEspera;
             yield return null;
         }
+
+        componente.cajas[0].SetActive(false);
+        componente.cajas[1].SetActive(false);
+        componente.cajas[2].SetActive(false);
+
+        componente.gabinetes[0].SetActive(false);
+
         llego = false;
         barraTiempo.SetActive(llego);
         timer = 0;

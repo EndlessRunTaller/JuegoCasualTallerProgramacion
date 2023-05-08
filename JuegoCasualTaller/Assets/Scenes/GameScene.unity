@@ -237,6 +237,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &29134648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 946252005}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.596
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.077
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.63742507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.63742507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.30608705
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.30608705
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -51.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_Name
+      value: CAJA_DE_CARTON (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 386ebc18e6933044a91185b7874bb064, type: 3}
 --- !u!1 &35977586
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +357,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!1 &62800387
@@ -318,8 +394,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!4 &62800389
@@ -940,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: da1dbecc96d33094ba93005166906f3a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da1dbecc96d33094ba93005166906f3a,
         type: 3}
@@ -1787,8 +1865,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!4 &267976835
@@ -1966,8 +2046,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!4 &322415656
@@ -2371,8 +2453,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!4 &350411032
@@ -3067,8 +3151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &419813920
@@ -3441,8 +3527,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!4 &549592229
@@ -3745,8 +3833,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!4 &566657046
@@ -3795,8 +3885,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &584426710
@@ -4173,8 +4265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!1 &702013164
@@ -4762,8 +4856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!4 &801046150
@@ -5093,6 +5189,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &860617240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 899643948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &860617241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 899643948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &865755110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5124,8 +5232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &865755112
@@ -5275,6 +5385,154 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1dbecc96d33094ba93005166906f3a, type: 3}
+--- !u!1001 &899643948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 946252005}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.426
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.596
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.055999756
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_Name
+      value: CAJA_DE_CARTON
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 386ebc18e6933044a91185b7874bb064, type: 3}
+--- !u!1001 &904792190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 946252005}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.596
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.088
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.63742507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.63742507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.30608705
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.30608705
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -51.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_Name
+      value: CAJA_DE_CARTON (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 386ebc18e6933044a91185b7874bb064, type: 3}
 --- !u!1 &908197228
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,8 +5596,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!4 &934641985
@@ -5388,6 +5648,9 @@ Transform:
   m_Children:
   - {fileID: 1560940750}
   - {fileID: 834578620}
+  - {fileID: 860617241}
+  - {fileID: 2102108552}
+  - {fileID: 950268696}
   m_Father: {fileID: 23404499}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5436,6 +5699,18 @@ Transform:
   m_Father: {fileID: 23404499}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &950268693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 29134648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &950268696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 29134648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &963362989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da1dbecc96d33094ba93005166906f3a,
@@ -5490,10 +5765,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovementAI: {fileID: 1579900139}
-  miniJuegosPanel:
-  - {fileID: 467058579}
-  miniJuegosImagenBarra:
-  - {fileID: 777386615}
+  cajas:
+  - {fileID: 860617240}
+  - {fileID: 2102108551}
+  - {fileID: 950268693}
+  gabinetes:
+  - {fileID: 1132782708}
   dinero: 10
   dineroTexto: {fileID: 597915517}
 --- !u!1 &1005755112
@@ -5623,6 +5900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1132782709}
   - {fileID: 1124778634}
   - {fileID: 499662957}
   m_Father: {fileID: 23404499}
@@ -5678,8 +5956,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!4 &1092044392
@@ -5726,8 +6006,114 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1014305852}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1132782707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1014305852}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 93.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 36.038025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 75.05745
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.384
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.074
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67380726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.67357206
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.21484491
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21476993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -35.37
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_Name
+      value: Gabinete1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dccf37d7081f0934daf7b8798b484936,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dccf37d7081f0934daf7b8798b484936, type: 3}
+--- !u!1 &1132782708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dccf37d7081f0934daf7b8798b484936,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132782707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1132782709 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dccf37d7081f0934daf7b8798b484936,
+    type: 3}
+  m_PrefabInstance: {fileID: 1132782707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135479311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6004,8 +6390,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &1195742497
@@ -6163,8 +6551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!1001 &1242263962
@@ -6732,8 +7122,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!4 &1382594278
@@ -6880,8 +7272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!4 &1444046412
@@ -6979,8 +7373,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!4 &1485183904
@@ -7155,8 +7551,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!1 &1556103961
@@ -7205,8 +7603,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!1 &1560940749
@@ -8030,8 +8430,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!4 &1625973372
@@ -8202,8 +8604,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 2041156245}
   tiempoDeEspera: 3
+  nombre: CPU
   barraTiempo: {fileID: 224828007}
   barraImagen: {fileID: 224828009}
 --- !u!4 &1645919453
@@ -8565,8 +8969,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!4 &1737484540
@@ -8615,8 +9021,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!4 &1739460725
@@ -8665,8 +9073,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!4 &1759440490
@@ -8813,8 +9223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!4 &1813613133
@@ -10020,8 +10432,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &1842094327
@@ -10183,8 +10597,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!4 &1868008715
@@ -10233,8 +10649,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 295732504}
   tiempoDeEspera: 3
+  nombre: Gabinete
   barraTiempo: {fileID: 641640119}
   barraImagen: {fileID: 641640121}
 --- !u!4 &1877971235
@@ -10283,8 +10701,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1124778634}
   tiempoDeEspera: 3
+  nombre: Dinero
   barraTiempo: {fileID: 1662435060}
   barraImagen: {fileID: 1662435062}
 --- !u!4 &1888449090
@@ -10439,8 +10859,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!4 &1917880587
@@ -10595,8 +11017,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
   tiempoDeEspera: 10
+  nombre: Trabajo
   barraTiempo: {fileID: 515239911}
   barraImagen: {fileID: 515239912}
 --- !u!4 &2000572908
@@ -11191,8 +11615,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!4 &2055497433
@@ -11313,6 +11739,18 @@ Transform:
   m_Father: {fileID: 23404499}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2102108551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 904792190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2102108552 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 386ebc18e6933044a91185b7874bb064,
+    type: 3}
+  m_PrefabInstance: {fileID: 904792190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2131971573
 GameObject:
   m_ObjectHideFlags: 0
@@ -11453,8 +11891,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 180766167}
   tiempoDeEspera: 1
+  nombre: Hablar
   barraTiempo: {fileID: 368636884}
   barraImagen: {fileID: 368636885}
 --- !u!4 &2136501667
@@ -11503,8 +11943,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completado: 0
   playerMovement: {fileID: 1579900139}
+  componente: {fileID: 997013242}
   Componente: {fileID: 1448800243}
   tiempoDeEspera: 3
+  nombre: RAM
   barraTiempo: {fileID: 1183917613}
   barraImagen: {fileID: 1183917615}
 --- !u!4 &2137282186

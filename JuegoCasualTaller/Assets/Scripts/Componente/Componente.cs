@@ -7,10 +7,8 @@ using TMPro;
 public class Componente : MonoBehaviour
 {
     public PlayerMovementAI playerMovementAI;
-    //Minijuego
-    public GameObject[] miniJuegosPanel;
-    public Image[] miniJuegosImagenBarra;
-
+    public GameObject[] cajas;
+    public GameObject[] gabinetes;
     public float dinero;
     public TextMeshProUGUI dineroTexto;
 
