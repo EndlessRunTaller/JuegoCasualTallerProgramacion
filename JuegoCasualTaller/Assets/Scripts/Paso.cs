@@ -10,6 +10,8 @@ public class Paso : MonoBehaviour
     public Transform Componente;
     public int tiempoDeEspera;
 
+    public GameObject barraTiempo;
+
     public IEnumerator Ejecutar()
     {
         NavMeshAgent agente = playerMovement.jugador1;
@@ -20,8 +22,9 @@ public class Paso : MonoBehaviour
         {
             yield return null;
         }
-
+        barraTiempo.SetActive(true);
         yield return new WaitForSeconds(tiempoDeEspera);
+        barraTiempo.SetActive(false);
 
         completado = true;
     }

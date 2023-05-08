@@ -23,6 +23,7 @@ public class Ruta : MonoBehaviour
         }
 
         StartCoroutine(PasoFinal.Ejecutar());
+        Debug.Log("LLego final");
         yield return new WaitWhile(() => PasoFinal.completado == false);
 
         yield return new WaitForSeconds(0f);

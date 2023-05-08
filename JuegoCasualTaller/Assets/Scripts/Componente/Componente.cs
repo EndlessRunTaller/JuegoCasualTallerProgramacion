@@ -35,9 +35,6 @@ public class Componente : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Condiciones();
-        Temporizador();
-        DineroNivel1();
     }
 
     void Condiciones()
