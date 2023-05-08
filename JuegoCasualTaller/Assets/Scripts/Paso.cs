@@ -15,6 +15,7 @@ public class Paso : MonoBehaviour
 
     public GameObject barraTiempo;
     public Image barraImagen;
+    private float timer =0;
 
     public IEnumerator Ejecutar()
     {
@@ -27,13 +28,16 @@ public class Paso : MonoBehaviour
             yield return null;
         }
         llego = true;
-        barraTiempo.SetActive(llego);
-        
-        yield return new WaitForSeconds(tiempoDeEspera);
-        barraTiempo.SetActive(false);
+        while (timer < tiempoDeEspera && llego)
+        {
+            timer = timer + 1 * Time.deltaTime;
+            barraTiempo.SetActive(llego);
+            barraImagen.fillAmount = timer / tiempoDeEspera;
+            yield return null;
+        }
         llego = false;
         barraTiempo.SetActive(llego);
-
+        timer = 0;
         completado = true;
     }
 
