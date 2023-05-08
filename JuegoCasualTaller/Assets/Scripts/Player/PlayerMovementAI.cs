@@ -41,7 +41,6 @@ public class PlayerMovementAI : MonoBehaviour
     void Start()
     {
         jugador1 = GetComponent<NavMeshAgent>();
-        Time.timeScale = 10f;
     }
 
     void Update()
