@@ -6,90 +6,143 @@ using TMPro;
 
 public class Componente : MonoBehaviour
 {
+    [Header("Animacion")]
+    public Animator anim1;
+    public Animator anim2;
+    public Animator anim3;
+    bool activarAnimacion1;
+
+    [Header("Objetos")]
     public PlayerMovementAI playerMovementAI;
     public GameObject[] cajas;
     public GameObject[] gabinetes;
 
+    [Header("Dinero")]
     public float dinero;
     public TextMeshProUGUI dineroTexto;
 
-    private int nivelGabinete;
-    private int nivelCPU;
-    private int nivelRAM;
 
-    private int valorGabinete;
-    private int valorCPU;
-    private int valorRAM;
+    //Gabinete = 1
+    private int nivelGabinete = 1;
+    private int valorGabinete = 1;
+    private int aumentoGabinete = 1;
+    [Header("Gabinete")]
+    public TextMeshProUGUI valorGabineteTexto;
+    [SerializeField] private Image coloresMejoraGabinete;
+    [SerializeField] private Image colorUpGabinete;
+    public TextMeshProUGUI nivelTextoGabinete;
 
+
+    private int nivelCPU = 1;
+    private int valorCPU = 1;
+    private int aumentoCPU = 1;
+    [Header("CPU")]
+    public TextMeshProUGUI valorCPUTexto;
+    [SerializeField] private Image coloresMejoraCPU;
+    [SerializeField] private Image colorUpCPU;
+    public TextMeshProUGUI nivelTextoCPU;
+
+    private int nivelRAM = 1;
+    private int valorRAM = 1;
+    private int aumentoRAM = 1;
+    [Header("CPU")]
+    public TextMeshProUGUI valorRAMTexto;
+    [SerializeField] private Image coloresMejoraRAM;
+    [SerializeField] private Image colorUpRAM;
+    public TextMeshProUGUI nivelTextoRAM;
+
+
+    [Header("UI")]
     public GameObject[] flechaMejora;
     public GameObject[] subMenu;
-
-
-
-
+    public GameObject panelTienda;
 
     // Start is called before the first frame update
     void Start()
     {
-        dinero = dinero + 0;
+        flechaMejora[0].SetActive(true);
+        flechaMejora[1].SetActive(true);
+        flechaMejora[2].SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Dinero
         dinero = dinero + 0 * Time.deltaTime;
         dineroTexto.text = "" + Mathf.Round(dinero);
-        GABINETEMEJORA();
-        CPUMEJORA();
-        RAMMEJORA();
 
-
-    }
-
-    //MEJORAS
-    void GABINETEMEJORA()
-    {
-        if (dinero > valorGabinete)
+        //Gabinete
+        valorGabineteTexto.text = "" + Mathf.Round(valorGabinete);
+        nivelTextoGabinete.text = "Nivel " + Mathf.Round(nivelGabinete);
+        if (dinero < valorGabinete)
         {
-            flechaMejora[0].SetActive(true);
+            coloresMejoraGabinete.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            colorUpGabinete.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            anim1.SetBool("isActive", false);
         }
         else
         {
-            flechaMejora[0].SetActive(false);
+            coloresMejoraGabinete.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            colorUpGabinete.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            anim1.SetBool("isActive", true);
         }
-    }
-    void CPUMEJORA()
-    {
-        if (dinero > valorCPU)
+
+
+        //CPU
+
+        valorCPUTexto.text = "" + Mathf.Round(valorCPU);
+        nivelTextoCPU.text = "Nivel " + Mathf.Round(nivelCPU);
+        if (dinero < valorCPU)
         {
-            flechaMejora[1].SetActive(true);
+            coloresMejoraCPU.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            colorUpCPU.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            anim2.SetBool("isActive", false);
         }
         else
         {
-            flechaMejora[1].SetActive(false);
+            coloresMejoraCPU.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            colorUpCPU.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            anim2.SetBool("isActive", true);
+
         }
-    }
-    void RAMMEJORA()
-    {
-        if (dinero > valorRAM)
+
+        //RAM
+
+        valorRAMTexto.text = "" + Mathf.Round(valorRAM);
+        nivelTextoRAM.text = "Nivel " + Mathf.Round(nivelRAM);
+        if (dinero < valorRAM)
         {
-            flechaMejora[2].SetActive(true);
+            coloresMejoraRAM.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            colorUpRAM.GetComponent<Image>().color = new Color32(102, 102, 102, 255);
+            anim3.SetBool("isActive", false);
         }
         else
         {
-            flechaMejora[2].SetActive(false);
+            coloresMejoraRAM.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            colorUpRAM.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+            anim3.SetBool("isActive", true);
         }
+
+
+
     }
+
 
 
     //OTRO MENÚ
 
     public void SUBMENUGABINETE()
     {
-        if(subMenu[0] != null)
+        if (subMenu[0] != null)
         {
             bool IsActive = subMenu[0].activeSelf;
             subMenu[0].SetActive(!IsActive);
+            if (!IsActive)
+            {
+                subMenu[1].SetActive(false);
+                subMenu[2].SetActive(false);
+            }
         }
     }
     public void SUBMENUCPU()
@@ -98,7 +151,13 @@ public class Componente : MonoBehaviour
         {
             bool IsActive = subMenu[1].activeSelf;
             subMenu[1].SetActive(!IsActive);
+            if (!IsActive)
+            {
+                subMenu[0].SetActive(false);
+                subMenu[2].SetActive(false);
+            }
         }
+
     }
     public void SUBMENURAM()
     {
@@ -106,6 +165,76 @@ public class Componente : MonoBehaviour
         {
             bool IsActive = subMenu[2].activeSelf;
             subMenu[2].SetActive(!IsActive);
+            if (!IsActive)
+            {
+                subMenu[0].SetActive(false);
+                subMenu[1].SetActive(false);
+            }
         }
+
+    }
+
+    //Subir de nivel
+
+
+
+    public void SUBIRGABINETE()
+    {
+        if (dinero >= valorGabinete)
+        {
+            valorGabinete += aumentoGabinete;
+            aumentoGabinete++;
+            nivelGabinete = nivelGabinete + 1;
+            if (dinero >= valorGabinete)
+            {
+                dinero -= valorGabinete;
+            }
+            else
+            {
+                dinero = 0;
+            }
+
+        }
+    }
+
+    public void SUBIRCPU()
+    {
+        if (dinero >= valorCPU)
+        {
+            valorCPU += aumentoCPU;
+            aumentoCPU++;
+            nivelCPU = nivelCPU + 1;
+            if (dinero >= valorCPU)
+            {
+                dinero -= valorCPU;
+            }
+            else
+            {
+                dinero = 0;
+            }
+        }
+    }
+
+    public void SUBIRRAM()
+    {
+        if (dinero >= valorRAM)
+        {
+            valorRAM += aumentoRAM;
+            aumentoRAM++;
+            nivelRAM = nivelRAM + 1;
+            if (dinero >= valorRAM)
+            {
+                dinero -= valorRAM;
+            }
+            else
+            {
+                dinero = 0;
+            }
+        }
+    }
+
+    public void PANELTIENDAACTIVAR()
+    {
+        panelTienda.SetActive(true);
     }
 }

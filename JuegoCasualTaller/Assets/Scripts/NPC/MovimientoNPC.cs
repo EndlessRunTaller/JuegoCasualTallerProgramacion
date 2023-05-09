@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class MovimientoNPC : MonoBehaviour
 {
-    public PlayerMovementAI playerMovementAI;
+    public PlayerMovementAI playerMovement;
 
     [Header("Navi")]
     public NavMeshAgent NPC1;
@@ -16,37 +16,27 @@ public class MovimientoNPC : MonoBehaviour
     [Header("Raycast")]
     [SerializeField] private Transform objetoRaycast;
     public float rayoDistancia;
-    bool EnMesa;
+    public bool EnMesa;
 
-    private void Start()
+
+    public void Start()
+    {
+        StartCoroutine(PasoNPC());
+    }
+    public IEnumerator PasoNPC()
     {
         NPC1.SetDestination(Fila[0].transform.position);
-    }
-
-    void Update()
-    {
-        //if(playerMovementAI.)
-    }
-
-    public bool MesaNPC()
-    {
-        Debug.DrawRay(objetoRaycast.position, objetoRaycast.forward * rayoDistancia, Color.red);
-        RaycastHit hit;
-
-
-        //Raycast
-        if (Physics.Raycast(objetoRaycast.position, objetoRaycast.forward, out hit, rayoDistancia))
+        while (NPC1.pathPending || NPC1.remainingDistance > NPC1.stoppingDistance)
         {
-
+            yield return null;
         }
-        if(hit.transform == null)
+        EnMesa = true;
+        yield return new WaitWhile(() => playerMovement.procesoIniciado == true);
+        NPC1.SetDestination(Fila[1].transform.position);
+        while (NPC1.pathPending || NPC1.remainingDistance > NPC1.stoppingDistance)
         {
-            EnMesa = false;
+            yield return null;
         }
-        else if (hit.transform.name == "MesaAtender")
-        {
-            EnMesa = true;
-        }
-        return EnMesa;
+        NPC1.SetDestination(Salida.transform.position);
     }
 }

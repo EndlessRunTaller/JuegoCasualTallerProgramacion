@@ -33,7 +33,9 @@ public class Ruta : MonoBehaviour
         yield return new WaitWhile(() => PasoFinal.completado == false);
 
         yield return new WaitForSeconds(0f);
+        Debug.Log(playerMovement.procesoIniciado);
         playerMovement.procesoIniciado = false;
+        Debug.Log(playerMovement.procesoIniciado);
     }
 
     public void Reset()

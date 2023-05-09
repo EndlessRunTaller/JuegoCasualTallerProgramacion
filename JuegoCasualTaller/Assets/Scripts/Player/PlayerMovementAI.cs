@@ -45,7 +45,7 @@ public class PlayerMovementAI : MonoBehaviour
 
     void Update()
     {
-        if (movimientoNPC.MesaNPC() == true && procesoIniciado == false)
+        if (movimientoNPC.EnMesa == true && procesoIniciado == false)
         {
             Ruta[Comportamiento()].Iniciar();
             procesoIniciado = true;
