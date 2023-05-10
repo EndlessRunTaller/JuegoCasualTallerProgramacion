@@ -40,10 +40,12 @@ public class Paso : MonoBehaviour
         if(nombre == "Dinero")
         {
             componente.gabinetes[0].SetActive(true);
+            movimientoNPC.entregaGabinete = true;
         }
         if(componente.gabineteRapida && nombre == "Gabinete")
         {
             tiempoDeEspera = tiempoDeEspera - 2;
+            
         }
         if(componente.CPURapida && nombre == "CPU")
         {

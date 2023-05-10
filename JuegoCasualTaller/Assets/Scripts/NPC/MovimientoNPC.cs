@@ -9,34 +9,41 @@ public class MovimientoNPC : MonoBehaviour
 
     [Header("Navi")]
     public NavMeshAgent NPC1;
-    private float timer;
+    public NavMeshAgent NPC2;
     public Transform[] Fila;
     public Transform Salida;
 
-    [Header("Raycast")]
-    [SerializeField] private Transform objetoRaycast;
-    public float rayoDistancia;
     public bool EnMesa;
+    public bool entregaGabinete;
+    public bool pagado;
+
+
 
 
     public void Start()
     {
-        StartCoroutine(PasoNPC());
+        StartCoroutine(PasoNPC0());
     }
-    public IEnumerator PasoNPC()
-    {
+    public IEnumerator PasoNPC0()
+    {    
         NPC1.SetDestination(Fila[0].transform.position);
         while (NPC1.pathPending || NPC1.remainingDistance > NPC1.stoppingDistance)
         {
             yield return null;
         }
         EnMesa = true;
-        yield return new WaitWhile(() => playerMovement.procesoIniciado == true);
-        NPC1.SetDestination(Fila[1].transform.position);
-        while (NPC1.pathPending || NPC1.remainingDistance > NPC1.stoppingDistance)
+        while (!entregaGabinete)
         {
             yield return null;
         }
+        //EnMesa = false;
+        NPC1.SetDestination(Fila[1].transform.position);
+
+        while (!pagado)
+        {
+            yield return null;
+        }
+        pagado = true;
         NPC1.SetDestination(Salida.transform.position);
     }
 }
