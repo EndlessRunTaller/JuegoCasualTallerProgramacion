@@ -29,13 +29,11 @@ public class Ruta : MonoBehaviour
         {
             yield return null;
         }
-        componente.dinero = componente.dinero + 25;
+        
         yield return new WaitWhile(() => PasoFinal.completado == false);
+        componente.dinero = componente.dinero + 25 + (componente.nivelGabinete * 3) + (componente.nivelCPU * 3) + (componente.nivelRAM * 3);
 
-        yield return new WaitForSeconds(0f);
-        Debug.Log(playerMovement.procesoIniciado);
         playerMovement.procesoIniciado = false;
-        Debug.Log(playerMovement.procesoIniciado);
     }
 
     public void Reset()

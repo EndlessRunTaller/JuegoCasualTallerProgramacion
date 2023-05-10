@@ -8,6 +8,7 @@ public class Paso : MonoBehaviour
 {
     public bool completado;
     public PlayerMovementAI playerMovement;
+    public MovimientoNPC movimientoNPC;
     public Componente componente;
     public Transform Componente;
     public int tiempoDeEspera;
@@ -39,6 +40,18 @@ public class Paso : MonoBehaviour
         if(nombre == "Dinero")
         {
             componente.gabinetes[0].SetActive(true);
+        }
+        if(componente.gabineteRapida && nombre == "Gabinete")
+        {
+            tiempoDeEspera = tiempoDeEspera - 2;
+        }
+        if(componente.CPURapida && nombre == "CPU")
+        {
+            tiempoDeEspera = tiempoDeEspera - 2;
+        }
+        if(componente.RAMRapida && nombre == "RAM")
+        {
+            tiempoDeEspera = tiempoDeEspera - 2;
         }
         while (timer < tiempoDeEspera && llego)
         {

@@ -22,34 +22,47 @@ public class Componente : MonoBehaviour
     public TextMeshProUGUI dineroTexto;
 
 
-    //Gabinete = 1
-    private int nivelGabinete = 1;
+    //Gabinete = 0
+    public int nivelGabinete = 1;
     private int valorGabinete = 1;
     private int aumentoGabinete = 1;
+    public bool gabineteRapida;
+    private int valorDestornillador = 50;
+
     [Header("Gabinete")]
     public TextMeshProUGUI valorGabineteTexto;
     [SerializeField] private Image coloresMejoraGabinete;
     [SerializeField] private Image colorUpGabinete;
     public TextMeshProUGUI nivelTextoGabinete;
+    [SerializeField] private GameObject mejoraDestornillador;
 
-
-    private int nivelCPU = 1;
+    //CPU = 1
+    public int nivelCPU = 1;
     private int valorCPU = 1;
     private int aumentoCPU = 1;
+    public bool CPURapida;
+    private int valorPasta = 50;
+
+    
     [Header("CPU")]
     public TextMeshProUGUI valorCPUTexto;
     [SerializeField] private Image coloresMejoraCPU;
     [SerializeField] private Image colorUpCPU;
     public TextMeshProUGUI nivelTextoCPU;
-
-    private int nivelRAM = 1;
+    [SerializeField] private GameObject mejoraPasta;
+    //RAM = 2
+    public int nivelRAM = 1;
     private int valorRAM = 1;
     private int aumentoRAM = 1;
-    [Header("CPU")]
+    public bool RAMRapida;
+    private int valorRamRapida = 50;
+
+    [Header("RAM")]
     public TextMeshProUGUI valorRAMTexto;
     [SerializeField] private Image coloresMejoraRAM;
     [SerializeField] private Image colorUpRAM;
     public TextMeshProUGUI nivelTextoRAM;
+    [SerializeField] private GameObject mejoraRAM;
 
 
     [Header("UI")]
@@ -236,5 +249,43 @@ public class Componente : MonoBehaviour
     public void PANELTIENDAACTIVAR()
     {
         panelTienda.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void PANELTIENDADESACTIVAR()
+    {
+        panelTienda.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void MEJORARAPIDAGABINETE()
+    {
+        if(dinero >= valorDestornillador)
+        {
+            gabineteRapida = true;
+            mejoraDestornillador.SetActive(!gabineteRapida);
+            dinero = dinero - valorDestornillador;
+        }
+        
+    }
+
+    public void MEJORARAPIDACPU()
+    {
+        if(dinero >= valorPasta)
+        {
+            CPURapida = true;
+            mejoraPasta.SetActive(!CPURapida);
+            dinero = dinero - valorPasta;
+        }       
+    }
+
+    public void MEJORARAPIDARAM()
+    {
+        if(dinero >= valorRamRapida)
+        {
+            RAMRapida = true;
+            mejoraRAM.SetActive(!RAMRapida);
+            dinero = dinero - valorRamRapida;
+        }
     }
 }

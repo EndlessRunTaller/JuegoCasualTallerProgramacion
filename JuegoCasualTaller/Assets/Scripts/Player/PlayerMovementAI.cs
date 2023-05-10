@@ -73,6 +73,8 @@ public class PlayerMovementAI : MonoBehaviour
         return numerosPosibles[indiceAleatorio];
 
     }
+
+
 }
 
 
