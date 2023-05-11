@@ -20,6 +20,9 @@ public class Paso : MonoBehaviour
     public Image barraImagen;
     private float timer =0;
 
+    public GameObject miniJuego;
+    public mingameLogic mingameLogic;
+
     public IEnumerator Ejecutar()
     {
         NavMeshAgent agente = playerMovement.jugador1;
@@ -31,12 +34,6 @@ public class Paso : MonoBehaviour
             yield return null;
         }
         llego = true;
-        if (nombre == "Trabajo")
-        {
-            componente.cajas[0].SetActive(true);
-            componente.cajas[1].SetActive(true);
-            componente.cajas[2].SetActive(true);
-        }
         if(nombre == "Dinero")
         {
             componente.gabinetes[0].SetActive(true);
@@ -44,17 +41,17 @@ public class Paso : MonoBehaviour
         }
         if(componente.gabineteRapida && nombre == "Gabinete")
         {
-            tiempoDeEspera = tiempoDeEspera - 2;
-            
+            tiempoDeEspera = 1;          
         }
         if(componente.CPURapida && nombre == "CPU")
         {
-            tiempoDeEspera = tiempoDeEspera - 2;
+            tiempoDeEspera = 1;
         }
         if(componente.RAMRapida && nombre == "RAM")
         {
-            tiempoDeEspera = tiempoDeEspera - 2;
+            tiempoDeEspera = 1;
         }
+
         while (timer < tiempoDeEspera && llego)
         {
             timer = timer + 1 * Time.deltaTime;
@@ -63,10 +60,18 @@ public class Paso : MonoBehaviour
             yield return null;
         }
 
-        componente.cajas[0].SetActive(false);
-        componente.cajas[1].SetActive(false);
-        componente.cajas[2].SetActive(false);
+        if(nombre == "Trabajo")
+        {
+            miniJuego.SetActive(true);
+            mingameLogic.minijuegoTornillos[0].SetActive(true);
+            mingameLogic.minijuegoTornillos[1].SetActive(true);
+            mingameLogic.minijuegoTornillos[2].SetActive(true);
+            mingameLogic.minijuegoTornillos[3].SetActive(true);
+            yield return new WaitWhile(() => mingameLogic.screwsRemoved < 4);
+        }
 
+        miniJuego.SetActive(false);
+        mingameLogic.screwsRemoved = 0;
         componente.gabinetes[0].SetActive(false);
 
         llego = false;

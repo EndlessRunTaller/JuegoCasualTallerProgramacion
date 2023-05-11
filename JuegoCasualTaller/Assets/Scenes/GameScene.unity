@@ -125,6 +125,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 7deb5a96a1d991e419fb5ce12bf10227, type: 2}
+--- !u!1 &18833820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 995567753287687928, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &18833821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &22059016
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +606,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!1 &42497608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2171,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &62800389
 Transform:
   m_ObjectHideFlags: 0
@@ -2613,141 +2629,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1bae633e38a9a8469bdc2880b47ec55, type: 3}
---- !u!1 &127751570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 127751571}
-  - component: {fileID: 127751573}
-  - component: {fileID: 127751572}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &127751571
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127751570}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 320140955}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &127751572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127751570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Button
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &127751573
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127751570}
-  m_CullTransparentMesh: 1
 --- !u!1 &129409408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,6 +4438,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &267976835
 Transform:
   m_ObjectHideFlags: 0
@@ -4799,128 +4682,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312069462}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &320140951
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 320140955}
-  - component: {fileID: 320140954}
-  - component: {fileID: 320140953}
-  - component: {fileID: 320140952}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &320140952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320140951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 320140953}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &320140953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320140951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &320140954
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320140951}
-  m_CullTransparentMesh: 1
---- !u!224 &320140955
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320140951}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 127751571}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &320611600
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,10 +4814,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &322415656
 Transform:
   m_ObjectHideFlags: 0
@@ -5367,6 +5130,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &350411032
 Transform:
   m_ObjectHideFlags: 0
@@ -5949,17 +5714,17 @@ PrefabInstance:
     - target: {fileID: 6816247253317684988, guid: 80966ad745f23214ba2fcef60a79a195,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.019014
+      value: -8.75
       objectReference: {fileID: 0}
     - target: {fileID: 6816247253317684988, guid: 80966ad745f23214ba2fcef60a79a195,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.10497379
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6816247253317684988, guid: 80966ad745f23214ba2fcef60a79a195,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.297592
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6816247253317684988, guid: 80966ad745f23214ba2fcef60a79a195,
         type: 3}
@@ -6422,6 +6187,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &419813920
 Transform:
   m_ObjectHideFlags: 0
@@ -7642,6 +7409,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &549592229
 Transform:
   m_ObjectHideFlags: 0
@@ -7951,10 +7720,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &566657046
 Transform:
   m_ObjectHideFlags: 0
@@ -8295,6 +8066,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &584426710
 Transform:
   m_ObjectHideFlags: 0
@@ -8934,6 +8707,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641640119}
   m_CullTransparentMesh: 1
+--- !u!1 &656181581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656181583}
+  - component: {fileID: 656181582}
+  m_Layer: 0
+  m_Name: Minijuego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &656181582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656181581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94368e6e10c480f4eb8e9f14a746eed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screwsRemoved: 0
+  minijuegoGabinete: {fileID: 18833820}
+  minijuegoTornillos:
+  - {fileID: 904248197}
+  - {fileID: 1656078064}
+  - {fileID: 1855692221}
+  - {fileID: 1462723227}
+--- !u!4 &656181583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656181581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41488075, y: 5.3635435, z: 10.495849}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 18833821}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &657744923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9392,6 +9217,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!1 &716037826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10318,6 +10145,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &801046150
 Transform:
   m_ObjectHideFlags: 0
@@ -10931,6 +10760,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &865755112
 Transform:
   m_ObjectHideFlags: 0
@@ -11152,6 +10983,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 386ebc18e6933044a91185b7874bb064, type: 3}
+--- !u!1 &904248197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 995567753352600656, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &904792190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11725,6 +11562,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &934641985
 Transform:
   m_ObjectHideFlags: 0
@@ -13827,6 +13666,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1092044392
 Transform:
   m_ObjectHideFlags: 0
@@ -14823,6 +14664,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1195742497
 Transform:
   m_ObjectHideFlags: 0
@@ -15083,6 +14926,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!1 &1214735501
 GameObject:
   m_ObjectHideFlags: 0
@@ -16205,6 +16050,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1382594278
 Transform:
   m_ObjectHideFlags: 0
@@ -16366,10 +16213,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1444046412
 Transform:
   m_ObjectHideFlags: 0
@@ -16555,6 +16404,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450379111}
   m_CullTransparentMesh: 1
+--- !u!1 &1462723227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 995567752521028098, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1465346622 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a1bae633e38a9a8469bdc2880b47ec55,
@@ -16599,6 +16454,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1485183904
 Transform:
   m_ObjectHideFlags: 0
@@ -16749,6 +16606,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!1 &1552697939
 GameObject:
   m_ObjectHideFlags: 0
@@ -16896,10 +16755,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!1 &1560940749
 GameObject:
   m_ObjectHideFlags: 0
@@ -17855,6 +17716,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1625973372
 Transform:
   m_ObjectHideFlags: 0
@@ -18306,6 +18169,8 @@ MonoBehaviour:
   nombre: CPU
   barraTiempo: {fileID: 1049241324}
   barraImagen: {fileID: 224828009}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1645919453
 Transform:
   m_ObjectHideFlags: 0
@@ -18321,6 +18186,12 @@ Transform:
   m_Father: {fileID: 22059018}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1656078064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 995567752062452305, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1656992754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da1dbecc96d33094ba93005166906f3a,
@@ -18998,6 +18869,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1737484540
 Transform:
   m_ObjectHideFlags: 0
@@ -19051,6 +18924,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1739460725
 Transform:
   m_ObjectHideFlags: 0
@@ -19441,10 +19316,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1759440490
 Transform:
   m_ObjectHideFlags: 0
@@ -20078,6 +19955,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1813613133
 Transform:
   m_ObjectHideFlags: 0
@@ -20411,6 +20290,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1842094327
 Transform:
   m_ObjectHideFlags: 0
@@ -20562,6 +20443,120 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 748090769}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1850619653
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 656181583}
+    m_Modifications:
+    - target: {fileID: 995567752062452316, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: screws
+      value: 
+      objectReference: {fileID: 656181582}
+    - target: {fileID: 995567752521028109, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: screws
+      value: 
+      objectReference: {fileID: 656181582}
+    - target: {fileID: 995567752634617702, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: screws
+      value: 
+      objectReference: {fileID: 656181582}
+    - target: {fileID: 995567753287687928, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_Name
+      value: minijuego 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687928, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8433915
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.53729963
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753287687929, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995567753352600659, guid: 00ef1e57d52866247a85dc69483a1bc5,
+        type: 3}
+      propertyPath: screws
+      value: 
+      objectReference: {fileID: 656181582}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00ef1e57d52866247a85dc69483a1bc5, type: 3}
 --- !u!1 &1850880190
 GameObject:
   m_ObjectHideFlags: 0
@@ -20758,6 +20753,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852155018}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1855692221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 995567752634617627, guid: 00ef1e57d52866247a85dc69483a1bc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850619653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1859399075
 GameObject:
   m_ObjectHideFlags: 0
@@ -20878,6 +20879,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1868008715
 Transform:
   m_ObjectHideFlags: 0
@@ -20931,6 +20934,8 @@ MonoBehaviour:
   nombre: Gabinete
   barraTiempo: {fileID: 2133609640}
   barraImagen: {fileID: 641640121}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1877971235
 Transform:
   m_ObjectHideFlags: 0
@@ -20984,6 +20989,8 @@ MonoBehaviour:
   nombre: Dinero
   barraTiempo: {fileID: 1526519271}
   barraImagen: {fileID: 1662435062}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1888449090
 Transform:
   m_ObjectHideFlags: 0
@@ -21173,6 +21180,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &1917880587
 Transform:
   m_ObjectHideFlags: 0
@@ -21419,10 +21428,12 @@ MonoBehaviour:
   movimientoNPC: {fileID: 565887100}
   componente: {fileID: 997013242}
   Componente: {fileID: 1560940750}
-  tiempoDeEspera: 10
+  tiempoDeEspera: 0
   nombre: Trabajo
   barraTiempo: {fileID: 1792198035}
   barraImagen: {fileID: 515239912}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &2000572908
 Transform:
   m_ObjectHideFlags: 0
@@ -22078,6 +22089,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &2055497433
 Transform:
   m_ObjectHideFlags: 0
@@ -22820,6 +22833,8 @@ MonoBehaviour:
   nombre: Hablar
   barraTiempo: {fileID: 370917800}
   barraImagen: {fileID: 368636885}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &2136501667
 Transform:
   m_ObjectHideFlags: 0
@@ -22873,6 +22888,8 @@ MonoBehaviour:
   nombre: RAM
   barraTiempo: {fileID: 1141175019}
   barraImagen: {fileID: 1183917615}
+  miniJuego: {fileID: 18833820}
+  mingameLogic: {fileID: 656181582}
 --- !u!4 &2137282186
 Transform:
   m_ObjectHideFlags: 0
