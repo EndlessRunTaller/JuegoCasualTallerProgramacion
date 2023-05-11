@@ -8,8 +8,6 @@ public class MovimientoNPC : MonoBehaviour
     public PlayerMovementAI playerMovement;
 
     [Header("Navi")]
-    public NavMeshAgent NPC1;
-    public NavMeshAgent NPC2;
     public Transform[] Fila;
     public Transform Salida;
 
@@ -18,16 +16,39 @@ public class MovimientoNPC : MonoBehaviour
     public bool pagado;
 
 
+    public NavMeshAgent[] agentes; // Lista de agentes
 
-
-    public void Start()
+    void Start()
     {
-        StartCoroutine(PasoNPC0());
+        StartCoroutine(CicloNPCs());
+        Time.timeScale = 10f;
     }
-    public IEnumerator PasoNPC0()
-    {    
-        NPC1.SetDestination(Fila[0].transform.position);
-        while (NPC1.pathPending || NPC1.remainingDistance > NPC1.stoppingDistance)
+
+    public IEnumerator CicloNPCs()
+    {
+        int currentIndex = 0;
+        while (true) // Iterar infinitamente
+        {
+            // Obtener el NPC actual
+            NavMeshAgent currentNPC = agentes[currentIndex];
+
+            // Ejecutar la rutina del NPC actual
+            yield return StartCoroutine(PasoNPC(currentNPC));
+
+            // Aumentar el índice del NPC
+            currentIndex++;
+            if (currentIndex >= agentes.Length) // Si llegamos al último NPC, reiniciar
+            {
+                currentIndex = 0;
+            }
+        }
+    }
+
+    public IEnumerator PasoNPC(NavMeshAgent NPC)
+    {
+        NPC.SetDestination(Fila[0].transform.position);
+        pagado = false;
+        while (NPC.pathPending || NPC.remainingDistance > NPC.stoppingDistance)
         {
             yield return null;
         }
@@ -37,13 +58,14 @@ public class MovimientoNPC : MonoBehaviour
             yield return null;
         }
         //EnMesa = false;
-        NPC1.SetDestination(Fila[1].transform.position);
+        NPC.SetDestination(Fila[1].transform.position);
 
         while (!pagado)
         {
             yield return null;
         }
         pagado = true;
-        NPC1.SetDestination(Salida.transform.position);
+        entregaGabinete = false;
+        NPC.SetDestination(Salida.transform.position);
     }
 }
