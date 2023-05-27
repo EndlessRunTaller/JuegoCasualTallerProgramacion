@@ -21,7 +21,6 @@ public class MovimientoNPC : MonoBehaviour
     void Start()
     {
         StartCoroutine(CicloNPCs());
-        Time.timeScale = 10f;
     }
 
     public IEnumerator CicloNPCs()

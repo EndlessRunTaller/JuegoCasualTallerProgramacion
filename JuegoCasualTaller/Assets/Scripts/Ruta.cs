@@ -33,6 +33,7 @@ public class Ruta : MonoBehaviour
         
         yield return new WaitWhile(() => PasoFinal.completado == false);
         componente.dinero = componente.dinero + 25 + (componente.nivelGabinete * 3) + (componente.nivelCPU * 3) + (componente.nivelRAM * 3);
+        AudioManager.instance.PlayAudio(AudioManager.instance.Despide);
 
         movimientoNPC.pagado = true;
         playerMovement.procesoIniciado = false;

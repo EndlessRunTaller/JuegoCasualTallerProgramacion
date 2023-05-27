@@ -14,5 +14,16 @@ public class gabminigamecontr : MonoBehaviour
     public void deactivateObject()
     {
         this.gameObject.SetActive(false);
+        
+    }
+
+    public void AudioDestornilladorActivo()
+    {
+        AudioManager.instance.PlayAudio(AudioManager.instance.Destornillador);
+    }
+
+    public void AudioDestornilladorDesactivo()
+    {
+        AudioManager.instance.StopAudio(AudioManager.instance.Destornillador);
     }
 }

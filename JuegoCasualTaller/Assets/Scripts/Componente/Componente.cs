@@ -198,6 +198,7 @@ public class Componente : MonoBehaviour
             valorGabinete += aumentoGabinete;
             aumentoGabinete++;
             nivelGabinete = nivelGabinete + 1;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
             if (dinero >= valorGabinete)
             {
                 dinero -= valorGabinete;
@@ -217,6 +218,7 @@ public class Componente : MonoBehaviour
             valorCPU += aumentoCPU;
             aumentoCPU++;
             nivelCPU = nivelCPU + 1;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
             if (dinero >= valorCPU)
             {
                 dinero -= valorCPU;
@@ -235,9 +237,11 @@ public class Componente : MonoBehaviour
             valorRAM += aumentoRAM;
             aumentoRAM++;
             nivelRAM = nivelRAM + 1;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
             if (dinero >= valorRAM)
             {
                 dinero -= valorRAM;
+
             }
             else
             {
@@ -250,12 +254,14 @@ public class Componente : MonoBehaviour
     {
         panelTienda.SetActive(true);
         Time.timeScale = 0f;
+        AudioManager.instance.PlayAudio(AudioManager.instance.MusicaTienda);
     }
 
     public void PANELTIENDADESACTIVAR()
     {
         panelTienda.SetActive(false);
         Time.timeScale = 1f;
+        AudioManager.instance.StopAudio(AudioManager.instance.MusicaTienda);
     }
 
     public void MEJORARAPIDAGABINETE()
@@ -265,6 +271,7 @@ public class Componente : MonoBehaviour
             gabineteRapida = true;
             mejoraDestornillador.SetActive(!gabineteRapida);
             dinero = dinero - valorDestornillador;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
         }
         
     }
@@ -276,6 +283,7 @@ public class Componente : MonoBehaviour
             CPURapida = true;
             mejoraPasta.SetActive(!CPURapida);
             dinero = dinero - valorPasta;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
         }       
     }
 
@@ -286,6 +294,7 @@ public class Componente : MonoBehaviour
             RAMRapida = true;
             mejoraRAM.SetActive(!RAMRapida);
             dinero = dinero - valorRamRapida;
+            AudioManager.instance.PlayAudio(AudioManager.instance.Dinero);
         }
     }
 }

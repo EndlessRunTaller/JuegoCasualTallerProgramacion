@@ -59,8 +59,21 @@ public class Paso : MonoBehaviour
             barraImagen.fillAmount = timer / tiempoDeEspera;
             yield return null;
         }
+        if (nombre == "CPU")
+        {
+            AudioManager.instance.PlayAudio(AudioManager.instance.Agarrar);
+        }
+        if (nombre == "RAM")
+        {
+            AudioManager.instance.PlayAudio(AudioManager.instance.Agarrar);
+        }
+        if (nombre == "Gabinete")
+        {
+            AudioManager.instance.PlayAudio(AudioManager.instance.Agarrar);
+        }
 
-        if(nombre == "Trabajo")
+
+        if (nombre == "Trabajo")
         {
             miniJuego.SetActive(true);
             mingameLogic.minijuegoTornillos[0].SetActive(true);
